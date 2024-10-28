@@ -38,6 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Update the date and time every minute
     setInterval(updateDateTime, 60000);
+
+
+    const scrollContainer = document.querySelector('.skills-scroll');
+    scrollContainer.addEventListener('mouseover', () => {
+        scrollContainer.style.animationPlayState = 'paused'; // Pause on hover
+    });
+
+    scrollContainer.addEventListener('mouseout', () => {
+        scrollContainer.style.animationPlayState = 'running'; // Resume on mouse out
+    });
     
 });
 
