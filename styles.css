@@ -283,12 +283,18 @@ p {
     
 }
 
-/* Project styling */
-#projects{
+.project-link {
+    display: block; /* Ensures the link covers the full project box */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+#projects {
     text-align: center;
     padding: 40px 0;
     background-color: #f4f4f4;
 }
+
 .project {
     text-align: left;
     margin-bottom: 2rem;
@@ -296,7 +302,6 @@ p {
     padding: 1rem;
     border-radius: 8px;
     background: #fff;
-   
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -305,6 +310,7 @@ p {
     transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Add a container to hold both sections */
 .container {
