@@ -228,7 +228,7 @@ p {
 }
 
 .certificate {
-    margin: 70px;
+    margin: 71px;
     display: inline-block;
 }
 
@@ -333,6 +333,8 @@ footer a {
 
 footer a:hover {
     color: #434343;
+
+
 }
 
 footer i {
