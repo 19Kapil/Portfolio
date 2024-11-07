@@ -1,4 +1,3 @@
-
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, li, form {
     margin: 0;
@@ -6,7 +5,7 @@ body, h1, h2, h3, p, ul, li, form {
     box-sizing: border-box;
     font-size: 22px;
     align-items: center;
-  
+   
 }
 
 /* Basic layout styles */
@@ -16,13 +15,12 @@ body {
     background: #f5f5f5;
     color: #333;
     padding-top: 80px; /* To account for fixed header */
-
 }
 
 /* Header styles */
 header {
-    background: linear-gradient(135deg, #1a1b1a, #3ad85a);
-    color: #fff;
+    background: linear-gradient(135deg, #000000, #ffffff);
+    color: #ffffff;
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -39,15 +37,17 @@ header h1 {
     margin: 0;
     font-size: 26px;
 }
+
 nav {
     display: flex;
     align-items: center;
     padding: 0.5rem;
     height: 4px;
 }
+
 nav img {
     height: 70px; 
-    margin-right: 20px; /* Reduce this margin for better alignment */
+    margin-right: 20px;
 }
 
 nav ul {
@@ -56,15 +56,14 @@ nav ul {
     justify-content: space-between;
 }
 
-
 nav ul li {
     display: inline;
-    margin:  15px;
+    margin: 15px;
     margin-right: 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -74,10 +73,9 @@ nav ul li a:hover {
     color: #f5f5f5;
 }
 
-
 /* Main content styling */
 main {
-    padding-top: 60px; /* Adjust based on header height */
+    padding-top: 60px;
 }
 
 section {
@@ -97,7 +95,7 @@ section:nth-child(odd) {
 section h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #054b05;
+    color: #000000;
     align-items: center;
 }
 
@@ -109,7 +107,6 @@ section h2 {
     width: 100%;
     max-width: 1200px;
     margin-bottom: 90px;
-  
 }
 
 .profile-photo {
@@ -117,12 +114,12 @@ section h2 {
     height: 350px;
     border-radius: 200%;
     margin-left: 20px;
-    
 }
 
 .profile-photo:hover {
     transform: scale(1.4);
 }
+
 .slideshow-container {
     position: relative;
     max-width: 500px;
@@ -137,20 +134,12 @@ section h2 {
     font-size: 40px;
     animation: slide 5s infinite;
     opacity: 0;
-    color:#054b05
+    color:  #000000;
 }
 
-.slideshow-text:nth-child(1) {
-    animation-delay: 1s;
-}
-
-.slideshow-text:nth-child(2) {
-    animation-delay: 2s;
-}
-
-.slideshow-text:nth-child(3) {
-    animation-delay: 3s;
-}
+.slideshow-text:nth-child(1) { animation-delay: 1s; }
+.slideshow-text:nth-child(2) { animation-delay: 2s; }
+.slideshow-text:nth-child(3) { animation-delay: 3s; }
 
 @keyframes slide {
     0% { opacity: 0; }
@@ -166,92 +155,72 @@ p {
     line-height: 1.6;
 }
 
-
-
+/* Button styling */
 .resume-button {
-        display: inline-block;
-        padding: 6px 12px;
-        font-size: 16px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #fff;
-        background-color: #179909;
-        border: none;
-        border-radius: 100px;
-        box-shadow: 0 5px #999;
-      }
-      
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 5px #999;
+}
 
-      
-      .resume-button:active {
-        background-color: #3e8e41;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-      }
-
+.resume-button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 
 .resume-button:hover {
     background-color: #027b10;
 }
 
-
+/* Skills section styling */
 #skills {
-    text-align: center; 
-    padding: 40px 0; 
-    background-color: #f4f4f4; 
-    overflow: hidden; 
-    position: relative; 
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f4f4f4;
 }
 
 #skills h2 {
-    font-size: 36px; 
-    margin-bottom: 30px; 
-    color:  #054b05; 
-    font-weight: bold; 
-    letter-spacing: 2px; 
+    font-size: 36px;
+    margin-bottom: 30px;
+    color:  #000000;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .skills-container {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     padding: 10px 0;
 }
 
 .skill {
-    display: inline-flex; 
-    justify-content: center; 
-    align-items: center; 
-    background-color: transparent; 
-    color: none; 
-    font-size: 90px; 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
     padding: 20px;
-    border-radius: 50%; 
-    width: 120px; 
-    height: 120px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 0 15px;
 }
 
 .skill:hover {
-    transform: scale(1.1); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .skill {
-        width: 100px; /* Smaller size for mobile */
-        height: 100px; /* Smaller height for mobile */
-        font-size: 30px; /* Adjust font size for mobile */
-    }
-}
-
-
-
+/* Certificates section */
 #certificates {
     text-align: center;
     padding: 40px 0;
@@ -264,29 +233,18 @@ p {
 }
 
 .certificate img {
-    width: 300px; 
-    height: 300px; 
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     margin: 20px;
-    display: inline-block;
-}
-
-.certificate a {
-    text-decoration: none;
-    display: inline-block;
-}
-
-.certificate a:hover {
-    transform: scale(1.05);
-    
 }
 
 .project-link {
-    display: block; /* Ensures the link covers the full project box */
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit color from parent */
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 #projects {
@@ -312,116 +270,108 @@ p {
 }
 
 
-/* Add a container to hold both sections */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  
-  /* Style the contact section */
-  #contact {
-    flex-basis: 40%; /* take 40% of the container width */
-    margin: 30px;
-    background-color: #daddda;
-    text-align: center;
-    margin-left: 50px;
-  }
-  
-  #contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #contact-form label {
-    margin-bottom: 10px;
-  }
-  
-  #contact-form input, #contact-form textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 
-  }
-  
-  #contact-form button[type="submit"] {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #contact-form button[type="submit"]:hover {
-    background-color: #3e8e41;
-  }
-  
-  /* Style the media section */
+/* Media section */
 #media {
-    flex-basis: 40%; /* take 40% of the container width */
-    margin: 30px;
+    flex-basis: 40%;
+    margin: 70px;
     text-align: center;
-    margin-right: 0px;
+}
 
-  }
-  
-  .social-media ul {
+#media h2 {
+    font-size: 36px;
+    margin-bottom: 70px;
+    color:  #000000;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.social-media ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .social-media li {
-    margin: 20px 0; /* add margin to separate the icons */
-  }
-  
-  .social-media a {
-    display: flex; /* make the anchor tag a flex container */
-    flex-direction: column; /* stack the icon and text vertically */
-    align-items: center; /* center the icon and text horizontally */
-    color: #cd4716;
+    display: flex; /* Align list items in a row */
+    justify-content: center; /* Center the items horizontally */
+    gap: 50px;
+}
+
+.social-media li {
+    margin: 0 20px; /* Space out the items horizontally */
+}
+
+.social-media a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #000000;
     text-decoration: none;
-  }
-  
-  .social-media a:hover {
+    font-size: 24px; /* Slightly larger text */
+}
+
+.social-media a:hover {
     color: #047306;
-  }
-  
-  .social-media i {
-    font-size: 60px; /* increase the icon size */
-    margin-bottom: 1px; /* add margin between the icon and text */
-  }
-  
+}
+
+.social-media i {
+    font-size: 80px; /* Increase icon size */
+    margin-right: 30px; /* Add space between icon and text */
+}
+
+
 /* Footer styling */
 footer {
     text-align: center;
-    background: linear-gradient(135deg, #1a1b1a, #3ad85a);
+    background: linear-gradient(135deg, #ffffff, #ffffff);
     color: white;
     padding: 20px;
-  }
+}
 
-  footer a {
-    color: #ffcc00;
+footer a {
+    color: #000000;
     text-decoration: none;
-  }
+}
 
-  footer a:hover {
-    color: #86e845; /* Change color on hover */
-  }
+footer a:hover {
+    color: #434343;
+}
 
-  footer i {
-    color: #ffcc00; /* Email icon color */
+footer i {
+    color: #000000;
     margin-right: 5px;
-  }
+}
+
+footer p{
+    color: #000000;
+    font-size: larger;
+}
 
 #datetime {
-    color: #ffffff;
+    color: #000000;
     font-size: 20px;
+    font-weight: bold;
     margin-right: 30px;
     text-align: right;
     float: right;
+}
+
+/* Media Queries */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+    header h1 { font-size: 20px; }
+    nav ul { flex-direction: column; align-items: center; }
+    nav ul li { margin: 5px; }
+    .profile { flex-direction: column; align-items: center; }
+    .skills-container { flex-direction: column; }
+    #contact, #media { flex-basis: 100%; }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    body { font-size: 18px; }
+    header h1 { font-size: 18px; }
+    .profile-photo { max-width: 100%; height: auto; }
+    section h2 { font-size: 1.8rem; }
+    .skills-container { flex-direction: column; align-items: center; }
+    #contact, #media { flex-basis: 100%; margin: 0; }
 }
